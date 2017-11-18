@@ -25,3 +25,11 @@
   height: 40px;
   text-align: center;
 }
+.modal, .modal-overlay {
+  visibility: hidden;
+  opacity: 0;
+}
+.modal.active, .modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
