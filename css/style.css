@@ -57,3 +57,19 @@
   color: #333333;
   transform: scale(0.8), translateY(-40px);
 }
+@keyframes swing {
+  /*0% {transform: rotate(0deg);}*/
+  from {transform: rotate(0deg);}
+  to {transform: rotate(-10deg);}
+}
+#left-arm {
+  /*animation: <name> <duration> <delay> <iteration-count> <timing function>*/
+  transform-origin: top center;
+  /*animation: swing 2s 0s infinite ease;*/
+  animation: swing 2s infinite;
+}
+#right-arm {
+  /*animation: <name> <duration> <delay> <iteration-count> <timing function>*/
+  transform-origin: top center;
+  animation: swing 2s infinite;
+}
