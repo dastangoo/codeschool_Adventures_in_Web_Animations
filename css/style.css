@@ -42,6 +42,13 @@
   transition: transform 4s ease-out;
 }
 .modal-close:hover {
-  transform: rotate(1turn);
+  /*transform: rotate(1turn);*/
   transform: rotate(360deg);
+}
+.test {
+  transition: transform 4s ease-out;
+}
+.test:hover {
+  /*transform: rotate(360deg);*/
+  transform: rotate(1turn);
 }
