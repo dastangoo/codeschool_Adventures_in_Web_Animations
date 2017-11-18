@@ -33,3 +33,15 @@
   opacity: 1;
   visibility: visible;
 }
+.modal-close {
+  font-size: 200%;
+  right: 15px;
+  top: 0;
+  position: absolute;
+  /*transition: transform 4s;*/
+  transition: transform 4s ease-out;
+}
+.modal-close:hover {
+  transform: rotate(1turn);
+  transform: rotate(360deg);
+}
