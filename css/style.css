@@ -122,3 +122,40 @@
   animation: slideUpSmall .25s .8s forwards,
              fadeIn .25s .8s forwards;
 }
+@keyframes darken {
+  0% {fill: #FCA9B7;}
+  100% {fill: #DD3D93;}
+}
+#icing-fill {
+  animation: darken 3s infinite,
+             shake 3s infiite ease-out;
+}
+@keyframes flyoff {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(30deg);}
+  20% {transform: rotate(0deg);}
+  30% {transform: rotate(-30deg);}
+  40% {transform: rotate(0deg);}
+  45% {opacity: 1;}
+  50% {
+    transform: rotate(100deg) scale(3);
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+    transform: scale(1);
+  }
+}
+#sprinkles {
+  transition: transform 2s;
+  transform-origin: 302px 337px;
+  animation: flyoff 3s infinite ease-in;
+}
+@keyframes shake {
+  0% {transform: rotate(0deg);}
+  10% {transform: rotate(30deg);}
+  20% {transform: rotate(0deg);}
+  30% {transform: rotate(-30deg);}
+  40% {transform: rotate(0deg);}
+  50% {transform: rotate(100deg);}
+}
