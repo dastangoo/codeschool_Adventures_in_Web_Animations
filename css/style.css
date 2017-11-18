@@ -45,3 +45,15 @@
   transform: rotate(1turn);
   transform: rotate(360deg);
 }
+.form-input + .form-label {
+  position: relative;
+  padding: 0 1em;
+  color: #6A7989;
+  /*transition: color 0.3s, transform 0.3s;*/
+  transform-origin: center left;
+  transition: all 0.3s;
+}
+.form-input:focus + .form-label {
+  color: #333333;
+  transform: scale(0.8), translateY(-40px);
+}
